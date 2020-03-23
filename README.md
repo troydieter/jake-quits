@@ -1,11 +1,7 @@
-# jake quits
+# count-up
 
-err...quit.
+A static counter calculation.
 
-This is a static site. Have at it. Fork-n-quit.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/584e8116-7c61-45bb-86e3-df09fb4c46d8/deploy-status)](https://app.netlify.com/sites/jakequits/deploys)
-
-- [jakequits.com](https://jakequits.com)
-- [jakechats.com](https://jakechats.com)
-- [jakeislistening.com](https://jakeislistening.com)
+Set the following in app.js:
+- Cost is calculated as `data.dailyCost`
+- Time is set as `data.Time`
