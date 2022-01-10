@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background: #ffbb00;
+  background: #0e2d52;
 }
 
 #app {
@@ -10,7 +10,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #000;
+  color: #FFF;
   min-height: 100%;
 }
 
@@ -150,10 +150,10 @@ svg circle {
 }
 svg circle.prog {
   will-change: auto;
-  stroke: #000;
+  stroke: #FFF;
 }
 svg circle.bg {
-  stroke: rgba(0, 0, 0, 0.1);
+  stroke: #25e0d5;
 }
 
 .progress {

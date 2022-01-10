@@ -10,7 +10,7 @@ const data = {
   dollars: null,
   cents: null,
   dailyCost: 11.0,
-  time: 1584370800000 // new Date(2019, 8, 24, 19)
+  time: 1641877200000 // new Date(2019, 8, 24, 19)
 };
 
 const progresses = document.querySelectorAll(".progress[fraction]");
@@ -19,7 +19,7 @@ update();
 
 function update() {
   const now = new Date().getTime();
-  const seconds = (now - data.time) / 1000;
+  const seconds = -(now - data.time) / 1000;
   data.years = seconds / 31556952;
   data.months = seconds / 2592000;
   data.weeks = seconds / 604800;
@@ -27,16 +27,7 @@ function update() {
   data.hours = seconds / 3600;
   data.minutes = seconds / 60;
   data.seconds = seconds;
-  data.savings = data.days * data.dailyCost;
-  data.dollars = Math.floor(data.savings)
-    .toString()
-    .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  data.cents = (data.savings - Math.floor(data.savings))
-    .toFixed(2)
-    .split(".")[1];
   updatePies();
-  document.getElementById("dollars").innerText = data.dollars;
-  document.getElementById("cents").innerText = data.cents;
 
   requestAnimationFrame(update);
 }
